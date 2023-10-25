@@ -1,0 +1,140 @@
+body {
+    background-color: teal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #fff;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+textarea,
+select,
+fieldset {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus,
+fieldset:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+input[type="text"].invalid,
+input[type="password"].invalid,
+input[type="email"].invalid,
+input[type="tel"].invalid,
+input[type="url"].invalid,
+input[type="number"].invalid,
+input[type="search"].invalid,
+textarea.invalid,
+select.invalid,
+fieldset.invalid {
+    border-color: #e9322d;
+    box-shadow: 0 0 5px rgba(233, 50, 47, 0.6);
+}
+input[type="text"].valid,
+input[type="password"].valid,
+input[type="email"].valid,
+input[type="tel"].valid,
+input[type="url"].valid,
+input[type="number"].valid,
+input[type="search"].valid,
+textarea.valid,
+select.valid,
+fieldset.valid {
+    border-color: #2ab27b;
+    box-shadow: 0 0 5px rgba(42, 178, 123, 0.6);
+}
+input[type="text"].focus,
+input[type="password"].focus,
+input[type="email"].focus,
+input[type="tel"].focus,
+input[type="url"].focus,
+input[type="number"].focus,
+input[type="search"].focus,
+textarea.focus,
+select.focus,
+fieldset.focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.registerbtn:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Path: Registration%20Form/registration.css */
+.registration-form {
+    margin-top: 50px;
+}
+
+.registration-form form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+}

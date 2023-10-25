@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    .parent{
+        width: 100%;
+        height: 100vh;
+        background-color: #921b78;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .child{
+        width: 100px;
+        height: 100px;
+        background-color: #ced116;
+        animation-duration: 3s;
+        animation-name: animate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(500px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>
